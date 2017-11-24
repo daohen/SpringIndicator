@@ -23,7 +23,7 @@ dependencies {
 apply plugin: 'signing'
 apply plugin: 'maven'
 
-ext {
+/*ext {
     groupId = 'com.github.chenupt.android'
     artifactId = 'springindicator'
     version = '1.0.3-SNAPSHOT'
@@ -58,9 +58,9 @@ task androidSourcesJar(type: Jar) {
 artifacts {
     archives androidSourcesJar
     archives androidJavadocsJar
-}
+}*/
 
-uploadArchives {
+/*uploadArchives {
     configuration = configurations.archives
     repositories.mavenDeployer {
         beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
@@ -103,5 +103,5 @@ uploadArchives {
             }
         }
     }
-}
+}*/
 
