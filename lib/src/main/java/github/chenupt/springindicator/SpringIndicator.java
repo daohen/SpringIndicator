@@ -129,7 +129,7 @@ public class SpringIndicator extends FrameLayout {
     }
 
     private void addTabItems() {
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT, 1.0f);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         tabs = new ArrayList<>();
         for (int i = 0; i < viewPager.getAdapter().getCount(); i++) {
             TextView textView = new TextView(getContext());
